@@ -37,254 +37,254 @@ body:
         Where is your university located?
       multiple: false
       options:
-        - Andorra
-        - دولة الإمارات العربية المتحدة
         - افغانستان
-        - Antigua and Barbuda
-        - Anguilla
-        - Shqipëria
-        - Հայաստան
-        - Angola
-        - Antarctica
-        - Argentina
-        - American Samoa
-        - Österreich
-        - Australia
-        - Aruba
         - Åland
+        - Shqipëria
+        - الجزائر
+        - American Samoa
+        - Andorra
+        - Angola
+        - Anguilla
+        - Antarctica
+        - Antigua and Barbuda
+        - Argentina
+        - Հայաստան
+        - Aruba
+        - Australia
+        - Österreich
         - Azərbaycan
-        - Bosna i Hercegovina
-        - Barbados
-        - Bangladesh
-        - België
-        - Burkina Faso
-        - България
+        - Bahamas
         - ‏البحرين
-        - Burundi
+        - Bangladesh
+        - Barbados
+        - Белару́сь
+        - België
+        - Belize
         - Bénin
-        - Saint-Barthélemy
         - Bermuda
-        - Negara Brunei Darussalam
+        - ʼbrug-yul
         - Bolivia
         - Bonaire
-        - Brasil
-        - Bahamas
-        - ʼbrug-yul
-        - Bouvetøya
+        - Bosna i Hercegovina
         - Botswana
-        - Белару́сь
-        - Belize
-        - Canada
-        - Cocos (Keeling) Islands
-        - République démocratique du Congo
-        - Ködörösêse tî Bêafrîka
-        - République du Congo
-        - Schweiz
-        - Côte d'Ivoire
-        - Cook Islands
-        - Chile
+        - Bouvetøya
+        - Brasil
+        - British Indian Ocean Territory
+        - British Virgin Islands
+        - Negara Brunei Darussalam
+        - България
+        - Burkina Faso
+        - Burundi
+        - Kâmpŭchéa
         - Cameroon
-        - 中国
-        - Colombia
-        - Costa Rica
-        - Cuba
+        - Canada
         - Cabo Verde
-        - Curaçao
+        - Cayman Islands
+        - Ködörösêse tî Bêafrîka
+        - Tchad
+        - Chile
+        - 中国
         - Christmas Island
+        - Cocos (Keeling) Islands
+        - Colombia
+        - Komori
+        - Cook Islands
+        - Costa Rica
+        - Hrvatska
+        - Cuba
+        - Curaçao
         - Κύπρος
         - Česká republika
-        - Deutschland
-        - Djibouti
+        - République démocratique du Congo
         - Danmark
+        - Djibouti
         - Dominica
         - República Dominicana
-        - الجزائر
+        - Timor-Leste
         - Ecuador
-        - Eesti
         - مصر‎
-        - الصحراء الغربية
+        - El Salvador
+        - Guinea Ecuatorial
         - ኤርትራ
-        - España
+        - Eesti
+        - Eswatini
         - ኢትዮጵያ
-        - Suomi
-        - Fiji
         - Falkland Islands
-        - Micronesia
         - Føroyar
+        - Fiji
+        - Suomi
         - France
-        - Gabon
-        - United Kingdom
-        - Grenada
-        - საქართველო
         - Guyane française
-        - Guernsey
+        - Polynésie française
+        - Territoire des Terres australes et antarctiques fr
+        - Gabon
+        - Gambia
+        - საქართველო
+        - Deutschland
         - Ghana
         - Gibraltar
-        - Kalaallit Nunaat
-        - Gambia
-        - Guinée
-        - Guadeloupe
-        - Guinea Ecuatorial
         - Ελλάδα
-        - South Georgia
-        - Guatemala
+        - Kalaallit Nunaat
+        - Grenada
+        - Guadeloupe
         - Guam
+        - Guatemala
+        - Guernsey
+        - Guinée
         - Guiné-Bissau
         - Guyana
-        - 香港
+        - Haïti
         - Heard Island and McDonald Islands
         - Honduras
-        - Hrvatska
-        - Haïti
+        - 香港
         - Magyarország
-        - Indonesia
-        - Éire
-        - יִשְׂרָאֵל
-        - Isle of Man
-        - भारत
-        - British Indian Ocean Territory
-        - العراق
-        - ایران
         - Ísland
+        - भारत
+        - Indonesia
+        - ایران
+        - العراق
+        - Éire
+        - Isle of Man
+        - יִשְׂרָאֵל
         - Italia
-        - Jersey
+        - Côte d'Ivoire
         - Jamaica
-        - الأردن
         - 日本
-        - Kenya
-        - Кыргызстан
-        - Kâmpŭchéa
-        - Kiribati
-        - Komori
-        - Saint Kitts and Nevis
-        - 북한
-        - 대한민국
-        - الكويت
-        - Cayman Islands
+        - Jersey
+        - الأردن
         - Қазақстан
+        - Kenya
+        - Kiribati
+        - Republika e Kosovës
+        - الكويت
+        - Кыргызстан
         - ສປປລາວ
+        - Latvija
         - لبنان
-        - Saint Lucia
-        - Liechtenstein
-        - śrī laṃkāva
-        - Liberia
         - Lesotho
+        - Liberia
+        - ‏ليبيا
+        - Liechtenstein
         - Lietuva
         - Luxembourg
-        - Latvija
-        - ‏ليبيا
-        - المغرب
-        - Monaco
-        - Moldova
-        - Црна Гора
-        - Saint-Martin
-        - Madagasikara
-        - M̧ajeļ
-        - Северна Македонија
-        - Mali
-        - မြန်မာ
-        - Монгол улс
         - 澳門
-        - Northern Mariana Islands
+        - Madagasikara
+        - Malawi
+        - Malaysia
+        - Maldives
+        - Mali
+        - Malta
+        - M̧ajeļ
         - Martinique
         - موريتانيا
-        - Montserrat
-        - Malta
         - Maurice
-        - Maldives
-        - Malawi
+        - Mayotte
         - México
-        - Malaysia
+        - Micronesia
+        - Moldova
+        - Monaco
+        - Монгол улс
+        - Црна Гора
+        - Montserrat
+        - المغرب
         - Moçambique
+        - မြန်မာ
         - Namibia
-        - Nouvelle-Calédonie
-        - Niger
-        - Norfolk Island
-        - Nigeria
-        - Nicaragua
-        - Nederland
-        - Norge
-        - नेपाल
         - Nauru
-        - Niuē
+        - नेपाल
+        - Nederland
+        - Nouvelle-Calédonie
         - New Zealand
+        - Nicaragua
+        - Niger
+        - Nigeria
+        - Niuē
+        - Norfolk Island
+        - 북한
+        - Северна Македонија
+        - Northern Mariana Islands
+        - Norge
         - عمان
-        - Panamá
-        - Perú
-        - Polynésie française
-        - Papua Niugini
-        - Pilipinas
         - Pakistan
-        - Polska
-        - Saint-Pierre-et-Miquelon
-        - Pitcairn Islands
-        - Puerto Rico
-        - فلسطين
-        - Portugal
         - Palau
+        - فلسطين
+        - Panamá
+        - Papua Niugini
         - Paraguay
+        - Perú
+        - Pilipinas
+        - Pitcairn Islands
+        - Polska
+        - Portugal
+        - Puerto Rico
         - قطر
+        - République du Congo
         - La Réunion
         - România
-        - Србија
         - Россия
         - Rwanda
-        - العربية السعودية
-        - Solomon Islands
-        - Seychelles
-        - السودان
-        - Sverige
-        - Singapore
+        - Saint-Barthélemy
         - Saint Helena
-        - Slovenija
-        - Svalbard og Jan Mayen
-        - Slovensko
-        - Sierra Leone
+        - Saint Kitts and Nevis
+        - Saint Lucia
+        - Saint-Martin
+        - Saint-Pierre-et-Miquelon
+        - Saint Vincent and the Grenadines
+        - Samoa
         - San Marino
-        - Sénégal
-        - Soomaaliya
-        - Suriname
-        - South Sudan
         - São Tomé e Príncipe
-        - El Salvador
+        - العربية السعودية
+        - Sénégal
+        - Србија
+        - Seychelles
+        - Sierra Leone
+        - Singapore
         - Sint Maarten
+        - Slovensko
+        - Slovenija
+        - Solomon Islands
+        - Soomaaliya
+        - South Africa
+        - South Georgia
+        - 대한민국
+        - South Sudan
+        - España
+        - śrī laṃkāva
+        - السودان
+        - Suriname
+        - Svalbard og Jan Mayen
+        - Sverige
+        - Schweiz
         - سوريا
-        - Eswatini
-        - Turks and Caicos Islands
-        - Tchad
-        - Territoire des Terres australes et antarctiques fr
-        - Togo
-        - ประเทศไทย
-        - Тоҷикистон
-        - Tokelau
-        - Timor-Leste
-        - Türkmenistan
-        - تونس
-        - Tonga
-        - Türkiye
-        - Trinidad and Tobago
-        - Tuvalu
         - 臺灣
+        - Тоҷикистон
         - Tanzania
-        - Україна
-        - Uganda
+        - ประเทศไทย
+        - Togo
+        - Tokelau
+        - Tonga
+        - Trinidad and Tobago
+        - تونس
+        - Türkiye
+        - Türkmenistan
+        - Turks and Caicos Islands
+        - Tuvalu
         - United States Minor Outlying Islands
+        - United States Virgin Islands
+        - Uganda
+        - Україна
+        - دولة الإمارات العربية المتحدة
+        - United Kingdom
         - United States
         - Uruguay
         - O'zbekiston
-        - Vaticano
-        - Saint Vincent and the Grenadines
-        - Venezuela
-        - British Virgin Islands
-        - United States Virgin Islands
-        - Việt Nam
         - Vanuatu
+        - Vaticano
+        - Venezuela
+        - Việt Nam
         - Wallis et Futuna
-        - Samoa
-        - Republika e Kosovës
+        - الصحراء الغربية
         - اليَمَن
-        - Mayotte
-        - South Africa
         - Zambia
         - Zimbabwe
     validations:
