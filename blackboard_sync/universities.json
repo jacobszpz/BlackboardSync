@@ -770,6 +770,16 @@
     "api_url": "https://blackboard.unibocconi.it"
   },
   {
+    "name": "San Jacinto College",
+    "short_name": "sanjac",
+    "country": "US",
+    "login": {
+      "start_url": "https://blackboard.sanjac.edu",
+      "target_url": "https://blackboard.sanjac.edu/ultra/"
+    },
+    "api_url": "https://blackboard.sanjac.edu"
+  },
+  {
     "name": "Fakeboard",
     "short_name": "dev",
     "login": {

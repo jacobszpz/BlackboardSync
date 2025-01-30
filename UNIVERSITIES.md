@@ -149,6 +149,7 @@ If this is not something you'd like, please let me know.
 - University of Maryland, Baltimore County
 - Syracuse University
 - University of Illinois Chicago
+- San Jacinto College
 
 ###### Canada
 
