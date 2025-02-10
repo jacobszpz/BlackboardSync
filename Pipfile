@@ -21,7 +21,7 @@ bwfilters = "==0.1.0"
 
 [dev-packages]
 coverage = "*"
-pyinstaller = "==6.10.0"
+pyinstaller = "==6.12.0"
 pywin32-ctypes = "==0.2.3"
 sphinx = "*"
 recommonmark = "*"
