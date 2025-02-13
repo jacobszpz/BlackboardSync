@@ -113,11 +113,12 @@ class WebDavFile(BStream):
         self.valid = validate_webdav_response(self.stream, link.href,
                                               job.session.instance_url)
 
-    def write(self, path: Path, executor: ThreadPoolExecutor) -> None:
+    def write(self, path: Path,
+              executor: ThreadPoolExecutor, modified_time=None) -> None:
         if self.valid:
             path = Path(path, self.title)
 
             if self.extension:
                 path = path.with_suffix(self.extension)
 
-            super().write_base(path, executor, self.stream)
+            super().write_base(path, executor, self.stream, modified_time)

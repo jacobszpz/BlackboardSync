@@ -141,7 +141,7 @@ def test_children_file(api_path: BBContentPath,
             assume(not att.mimeType.startswith("video/"))
             assume(not att.mimeType == '*')
 
-        calls.append(mock.call(att, api_path, job))
+        calls.append(mock.call(att, api_path, job, modified_time=None))
 
     with mock.patch('blackboard_sync.content.document.Attachment') as p:
         Document(None, api_path, job)

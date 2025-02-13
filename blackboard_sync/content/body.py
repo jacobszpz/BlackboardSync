@@ -21,6 +21,7 @@ class ContentBody(FStream):
             return
 
         title = content.title or "Untitled"
+        self.modified_time = content.modified_time if content else None
         parser = ContentParser(content.body, job.session.instance_url)
 
         self.body = create_body(title, parser.body, parser.text)
@@ -30,7 +31,9 @@ class ContentBody(FStream):
         if self.ignore:
             return
 
-        self.write_base(path / f"{path.stem}.html", executor, self.body)
+        self.write_base(
+            path / f"{path.stem}.html", executor, self.body, self.modified_time
+        )
 
         for child in self.children:
-            child.write(path, executor)
+            child.write(path, executor, self.modified_time)
