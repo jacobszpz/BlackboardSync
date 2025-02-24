@@ -20,6 +20,7 @@ Parse an html to look for links
 # MA  02110-1301, USA.
 
 
+import json
 import mimetypes
 from pathlib import Path
 from requests import Response
@@ -55,20 +56,40 @@ class ContentParser:
     def _find_replace(self, soup: BeautifulSoup,
                       tag: str, attr: str, base_url: str) -> list[Link]:
         links = []
+        is_link = tag == "a"
 
         for el in soup.find_all(tag):
             # Add link for later download
             uri = el.get(attr)
 
             if uri:
+                # Parse JSON dataset
+                filename = self._parse_bbfile(el) if is_link else None
                 # Handle url-encoding
-                filename = unquote(uri.split('/')[-1])
+                filename = filename or unquote(uri.split('/')[-1])
                 links.append(Link(href=uri, text=filename))
+
+                # Assign inner text if missing
+                if not el.string:
+                    el.append(filename)
 
                 # Replace for local instance
                 if uri.startswith(base_url):
                     el[attr] = filename
         return links
+
+    def _parse_bbfile(self, el: str) -> str | None:
+        json_data = el.get("data-bbfile")
+        filename = None
+
+        if json_data:
+            try:
+                bbfile = json.loads(json_data)
+            except json.JSONDecodeError:
+                pass
+            else:
+                filename = bbfile.get("linkName")
+        return filename
 
     @property
     def links(self) -> List[Link]:
