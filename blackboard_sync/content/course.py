@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
 from datetime import datetime
+import os
 from concurrent.futures import ThreadPoolExecutor
 
 from blackboard.blackboard import BBCourse
@@ -23,6 +24,7 @@ class Course:
 
         self.year = self.get_year(course.created)
         self.title = course.title or 'Untitled Course'
+        self.modified_time = course.modified
 
         contents = job.session.fetch_contents(course_id=course.id)
         self.children = []
@@ -40,6 +42,11 @@ class Course:
 
         for child in self.children:
             child.write(path, executor)
+
+        if self.modified_time:
+            timestamp = self.modified_time.timestamp()
+            path.touch(exist_ok=True)
+            os.utime(path, (timestamp, timestamp))
 
     @staticmethod
     def get_year(created: datetime | None) -> str:

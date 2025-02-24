@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 from concurrent.futures import ThreadPoolExecutor
 
 from blackboard.blackboard import BBCourseContent
@@ -11,9 +12,10 @@ from . import content
 class Folder:
     """Content of type `x-bb-folder`."""
 
-    def __init__(self, _: BBCourseContent, api_path: BBContentPath,
+    def __init__(self, coursecontent: BBCourseContent, api_path: BBContentPath,
                  job: DownloadJob) -> None:
         self.children = []
+        self.modified_time = coursecontent.modified if coursecontent else None
         course_id = api_path['course_id']
 
         for child in job.session.fetch_content_children(**api_path):
@@ -27,6 +29,10 @@ class Folder:
 
         for child in self.children:
             child.write(path, executor)
+
+        if self.modified_time:
+            timestamp = self.modified_time.timestamp()
+            os.utime(path, (timestamp, timestamp))
 
     @property
     def create_dir(self) -> bool:

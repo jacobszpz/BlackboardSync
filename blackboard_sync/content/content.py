@@ -1,4 +1,5 @@
 import logging
+import os
 from pathlib import Path
 from json import JSONDecodeError
 from pydantic import ValidationError
@@ -38,6 +39,7 @@ class Content:
 
         Handler = Content.get_handler(content.contentHandler)
         self.title = content.title_path_safe.replace('.', '_')
+        self.modified_time = content.modified if content else None
 
         try:
             self.handler = Handler(content, api_path, job)
@@ -68,6 +70,12 @@ class Content:
         if self.body is not None:
             path.mkdir(exist_ok=True, parents=True)
             self.body.write(path, executor)
+
+        if (self.modified_time and
+                (self.handler is not None or self.body is not None)):
+            timestamp = self.modified_time.timestamp()
+            path.touch(exist_ok=True)
+            os.utime(path, (timestamp, timestamp))
 
     @staticmethod
     def should_download(content: BBCourseContent, job: DownloadJob) -> bool:
